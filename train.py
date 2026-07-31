@@ -8,6 +8,7 @@ import numpy as np
 from tqdm import tqdm
 from utils import time_string, convert_secs2time, AverageMeter, normalize
 from lib.TSRNet import TSRNet
+from lib.TSRNet_time import TSRNet_time
 from dataloader import TrainSet, TestSet
 from sklearn.metrics import roc_auc_score
 import copy
