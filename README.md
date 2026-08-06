@@ -16,7 +16,7 @@
     <a href="https://www.nganle.net/"><strong>Ngan Le</strong></a>
   </p>
 
-  <h4 align="center"><a href="https://arxiv.org/abs/2312.10187">arXiv Paper</a> | <a href="docs/">Beginner-Friendly Project Guide</a> | <a href="LOCAL_RUN_REPORT.md">Local Execution Report</a> | <a href="output_result.md">Benchmark Report</a></h4>
+  <h4 align="center"><a href="https://arxiv.org/abs/2312.10187">arXiv Paper</a> | <a href="docs/">Beginner-Friendly Project Guide</a> | <a href="docs/LOCAL_RUN_REPORT.md">Local Execution Report</a> | <a href="docs/output_result.md">Benchmark Report</a></h4>
   <div align="center"></div>
 
 </p>
@@ -39,7 +39,7 @@ The electrocardiogram (ECG) is a valuable signal used to assess various aspects 
 
 For a complete, beginner-friendly technical explanation, diagrams, and terminology breakdown of our local pipeline (including how we fixed the epoch loop range error), please see our **new** [Beginner Documentation Folder](docs/).
 
-For the concise summary of the local metrics, please see [LOCAL_RUN_REPORT.md](LOCAL_RUN_REPORT.md).
+For the concise summary of the local metrics, please see [docs/LOCAL_RUN_REPORT.md](docs/LOCAL_RUN_REPORT.md).
 
 ### 1. Data Preprocessing (`preprocess.py`)
 To process raw PhysioNet PTB-XL dataset WFDB files (`.dat` / `.hea`) directly:
