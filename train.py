@@ -63,11 +63,11 @@ def main(args):
     epoch_time = AverageMeter()
  
     old_auc_result = 0
-    for epoch in range(0, args.epochs + 1):
+    for epoch in range(0, args.epochs):
         adjust_learning_rate(optimizer, args.lr, epoch, args)
-        need_hour, need_mins, need_secs = convert_secs2time(epoch_time.avg * (args.epochs - epoch))
+        need_hour, need_mins, need_secs = convert_secs2time(epoch_time.avg * (args.epochs - epoch - 1))
         need_time = '[Need: {:02d}:{:02d}:{:02d}]'.format(need_hour, need_mins, need_secs)
-        print(' {:3d}/{:3d} ----- [{:s}] {:s}'.format(epoch, args.epochs, time_string(), need_time))
+        print(' {:3d}/{:3d} ----- [{:s}] {:s}'.format(epoch + 1, args.epochs, time_string(), need_time))
         epoch_time.update(time.time() - start_time)
         start_time = time.time()
  
