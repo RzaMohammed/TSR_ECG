@@ -18,6 +18,9 @@ Furthermore, unlike the training data (which was 100% healthy patients), the tes
 2. It feeds the 2,155 test patients into the AI one by one, masking 30% of their data.
 3. The AI attempts to reconstruct the data. 
 4. The script calculates the **Reconstruction Error** (MSE) for every patient.
+
+![Original vs Reconstructed ECG Graph](Images/reconstruction_graph.png)
+
 5. High Error = AI thinks they are Sick. Low Error = AI thinks they are Healthy.
 
 ---
@@ -56,6 +59,8 @@ This gives us a single, universally understood number to grade our AI:
 * **AUC = 0.500:** The curve is a straight diagonal line. The AI is utterly useless. It has a 50/50 chance of being right, exactly like flipping a coin. 
 * **AUC = 0.800:** The AI is very good! 80% of the time, it will rank a sick patient as having a higher error than a healthy patient. 
 * **AUC = 1.000:** The AI is an omniscient god. It perfectly separates the sick from the healthy with 0 False Positives and 0 False Negatives.
+
+![ROC Curve Score Plot](Images/roc_curve.png)
 
 ---
 
